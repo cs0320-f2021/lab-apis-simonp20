@@ -22,6 +22,7 @@ public class ClientRequestGenerator {
     // TODO build and return a new GET HttpRequest.
     // See https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html and
     // https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html
+    HttpRequest request = HttpRequest.newBuilder().uri(URI.create(reqUri)).build();
     return null;
   }
 
